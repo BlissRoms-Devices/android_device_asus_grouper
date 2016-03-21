@@ -32,13 +32,13 @@ PRODUCT_PROPERTY_OVERRIDES := \
     persist.sys.media.legacy-drm=true \
     drm.service.enabled=true
 
+# disable Captive portal check
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.disable_captive_portal=1
+
 # libhwui flags
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwui.render_dirty_regions=false
-
-# Set default USB interface
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp
 
 include frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap.mk
 
@@ -94,6 +94,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audio.r_submix.default \
     librs_jni \
+    libemoji \
     l2ping \
     hcitool \
     bttest \
