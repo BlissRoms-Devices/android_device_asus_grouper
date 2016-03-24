@@ -1,9 +1,9 @@
 [
   {
-    "remote": "github",
-    "repository": "purity-devices/android_kernel_asus_grouper",
-    "target_path": "kernel/asus/grouper",
-    "branch":      "android-m"
+   "remote": "github",
+   "repository": "electrikjesus/android_kernel_asus_grouper",
+   "target_path": "kernel/asus/grouper",
+   "branch":      "android-m"
   },
   {
    "remote": "github",
