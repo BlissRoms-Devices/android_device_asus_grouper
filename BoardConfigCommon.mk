@@ -90,7 +90,7 @@ NEED_WORKAROUND_CORTEX_A9_745320 := true
 BOARD_USES_GROUPER_MODULES := true
 
 TARGET_KERNEL_SOURCE := kernel/asus/grouper
-TARGET_KERNEL_CONFIG := tegra3_android_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_grouper_defconfig
 
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
@@ -100,17 +100,17 @@ BOARD_SEPOLICY_DIRS += \
 # BlissPop Configs
 #TARGET_TC_ROM := 4.9
 #TARGET_TC_KERNEL := 4.9
-#BLISSIFY := true
-#BLISS_O3 := true
-#BLISS_STRICT := false
-#BLISS_GRAPHITE := true
-#BLISS_KRAIT := false
-#BLISS_PIPE := true
-#TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
-#TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
-#TARGET_KERNEL_HEADER_ARCH := arm
-#WITH_LZMA_OTA := true
-#TARGET_ENABLE_UKM := true
+BLISSIFY := true
+BLISS_O3 := true
+BLISS_STRICT := false
+BLISS_GRAPHITE := true
+BLISS_KRAIT := false
+BLISS_PIPE := true
+TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
+TARGET_KERNEL_HEADER_ARCH := arm
+WITH_LZMA_OTA := true
+TARGET_ENABLE_UKM := true
 
 #SaberMod
-#-include vendor/bliss/config/sm.mk
+-include vendor/bliss/config/sm.mk
