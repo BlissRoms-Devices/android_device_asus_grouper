@@ -1,9 +1,9 @@
 [
   {
   "remote": "github",
-  "repository": "purity-devices/kernel_asus_grouper",
+  "repository": "AICP/kernel_asus_grouper",
   "target_path": "kernel/asus/grouper",
-  "revision": "android-m"
+  "revision": "mm6.0"
   },
   {
    "remote": "github",
